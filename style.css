@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.glass {
+  background: white;
+  min-height: 70vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 3;
+  backdrop-filter: blur(1rem);
+  display: flex;
+}
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5)
+  );
+  height: 16rem;
+  width: 16rem;
+  position: absolute;
+}
+
+.circle1 {
+  top: 5%;
+  right: 10%;
+  border-radius: 50%;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 10%;
+border-radius: 50%;
+}
+.dashboard{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+  background-color: aliceblue;
+border-radius: 2rem;
+
+}
+.user{
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  color: #448e8d;
+}
+
+.userimg{
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  margin: 15px;
+  border-radius: 100%;
+}
+.link{
+  margin-top: 30px;
+  margin-left: 80px;
+  color: rgb(74, 189, 189);
+}
+.link > span {
+  padding-left: 10px;
+}
+
+.pngphoto{
+  width: 80px;
+}
+.pro{
+  max-width: 200px;
+  margin:auto;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 6px;
+  margin: 30px;
+  background: #65dfc9;
+}
+.pro > h2 {
+  font-size: 16px;
+  color: whitesmoke;
+  padding: 20px;
+}
+
+.games{
+margin: 40px;
+width: 100%;
+}
+.cardimg{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 1rem;
+  padding:4px
+}
+.card{
+ display: flex;
+ margin-top: 20px;
+ border-radius: 1rem;
+ background-color: aliceblue;
+justify-content: space-between;
+padding: 12px;
+padding-left: 20px;
+}
+
+.gameinp{
+  border-radius: 10px;
+  border: none;
+  padding: 4px;
+  margin-top: 8px;
+}
+.status > h1{
+  color: #357a9a;
+
+}
+.fakerange{
+  margin-top: 15px;
+width: 100%;
+height: 24px;
+border-radius: 1rem;
+background: linear-gradient(
+  to right bottom,
+  rgb(157, 228, 227),
+  rgba(68, 182, 244, 0.5)
+);
+overflow: hidden;
+position: relative;
+}
+.fakerange::after{
+  content:"";
+  width: 100%;
+  height: 100%;
+  background: rgb(236,236,236);
+  position: absolute;
+  left: 60%;
+}
+.infogame > h3 {
+  color: #369ac8;
+}
+.infogame > p{
+  color: #446472;
+  margin-top: 10px;
+}
+.card > span {
+  color: rgb(172, 23, 23);
+}
